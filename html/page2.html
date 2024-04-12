@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="stylesheet" href="../styling/style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image uploaded</title>
+</head>
+  <body>
+    <div id="container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Get in touch</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email Id" required>
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
+
+
+      </form>
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script> 
+      function sendEmail(){
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "siddhanth.wankhade21@pccoepune.org",
+          Password : "121B1077",
+          To : 'siddhanth.wankhade21@pccoepune.org',
+          From : document.getElementById("email").value,
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );     
+      }
+    </script>
+  </body>
+</html>
