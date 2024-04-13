@@ -8,9 +8,12 @@
     <title>Image uploaded</title>
 </head>
   <body>
+    <div class="header-bar">
+      <img src="../public/logo.png">
+    </div>
     <div id="container">
       <form onsubmit="sendEmail(); reset(); return false;">
-        <h3>Get in touch</h3>
+        <h3 class="containerh3">Enter your details</h3>
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Email Id" required>
         <input type="text" id="phone" placeholder="Phone no." required>

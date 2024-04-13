@@ -1,21 +1,26 @@
 *{
+    background-color: #272626;
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
-.container{
+#container{
     width: 100%;
-    height:100 vh;
-    background: #001660;
+    height:100vh;
+    background: #191919;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.containerh3{
+    color:#fff;
 }
 
 form{
-    background: #fff;
+    background: #575757;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -43,7 +48,7 @@ form input, form textarea{
 
 form button{
     padding: 15px;  
-    background: #ff5361;
+    background: #dd777f;
     color:#fff;
     font-size: 18px;
     border: 0;
@@ -55,3 +60,9 @@ form button{
 }
 
 
+.header-bar img{
+    width: 140px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
