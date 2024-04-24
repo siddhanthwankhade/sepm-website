@@ -17,27 +17,15 @@
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Email Id" required>
         <input type="text" id="phone" placeholder="Phone no." required>
-        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-        <button type="submit">Send</button>
-
-
-      </form>
+        <textarea id="message" rows="4" placeholder="Your Business Address"></textarea>
+      </form>            
     </div>
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
-    <script> 
-      function sendEmail(){
-        Email.send({
-          Host : "smtp.gmail.com",
-          Username : "siddhanth.wankhade21@pccoepune.org",
-          Password : "121B1077",
-          To : 'siddhanth.wankhade21@pccoepune.org',
-          From : document.getElementById("email").value,
-          Subject : "This is the subject",
-          Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );     
-      }
-    </script>
+    <div style="padding-left: 45%;"><a href="page3.html"><button class="send-button">Send</button> </a> </div>
+    <br><br>
+   
+  <script> function hrefFunction(){
+    windows.location.href = "page3.html";
+}
+</script>
   </body>
 </html>
